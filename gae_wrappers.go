@@ -49,6 +49,18 @@ func CreateDelayTask(queueName, subPath string, f *delay.Function, args ...inter
 	}
 }
 
+func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...[]interface{}) (err error) {
+	tasks := make([]*taskqueue.Task, len(args))
+	for i, arg := range args {
+		if tasks[i], err = CreateDelayTask(queueName, subPath, f, arg...); err != nil {
+			return fmt.Errorf("faield to create task for work # %d: %w", i, err)
+		}
+		tasks[i].Delay = delay
+	}
+	tasks, err = taskqueue.AddMulti(ctx, tasks, queueName)
+	return err
+}
+
 func EnqueueWork(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...interface{}) (err error) {
 	var task *taskqueue.Task
 	task, err = CreateDelayTask(queueName, subPath, f, args...)
