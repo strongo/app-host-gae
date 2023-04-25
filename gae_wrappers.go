@@ -49,12 +49,13 @@ func CreateDelayTask(queueName, subPath string, f *delay.Function, args ...inter
 	}
 }
 
-func EnqueueWork(ctx context.Context, queueName, subPath string, f *delay.Function, args ...interface{}) (err error) {
+func EnqueueWork(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...interface{}) (err error) {
 	var task *taskqueue.Task
 	task, err = CreateDelayTask(queueName, subPath, f, args...)
 	if err == nil {
 		return fmt.Errorf("failed to create delay task: %w", err)
 	}
+	task.Delay = delay
 	task, err = taskqueue.Add(ctx, task, queueName)
 	return err
 }
