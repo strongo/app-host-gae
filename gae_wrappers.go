@@ -16,6 +16,7 @@ var CallDelayFunc = func(c context.Context, queueName, subPath string, f *delay.
 }
 
 // CallDelayFuncWithDelay - TODO: Document why whe need this
+// Obsolete - use EnqueueWork instead
 var CallDelayFuncWithDelay = func(c context.Context, delay time.Duration, queueName, subPath string, f *delay.Function, args ...interface{}) error {
 	if task, err := CreateDelayTask(queueName, subPath, f, args...); err != nil {
 		return err
@@ -46,6 +47,16 @@ func CreateDelayTask(queueName, subPath string, f *delay.Function, args ...inter
 		task.Path += fmt.Sprintf("?task=%v&queue=%v", url.QueryEscape(subPath), url.QueryEscape(queueName))
 		return task, nil
 	}
+}
+
+func EnqueueWork(ctx context.Context, queueName, subPath string, f *delay.Function, args ...interface{}) (err error) {
+	var task *taskqueue.Task
+	task, err = CreateDelayTask(queueName, subPath, f, args...)
+	if err == nil {
+		return fmt.Errorf("failed to create delay task: %w", err)
+	}
+	task, err = taskqueue.Add(ctx, task, queueName)
+	return err
 }
 
 const failedToAddTaskToQueue = "failed to add task to queue"
