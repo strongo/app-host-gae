@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/stretchr/testify v1.8.2
-	github.com/strongo/app v0.2.3
+	github.com/strongo/app v0.2.4
 	google.golang.org/appengine v1.6.7
 )
 
