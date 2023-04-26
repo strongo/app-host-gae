@@ -11,6 +11,7 @@ import (
 )
 
 // CallDelayFunc - TODO: Document why whe need this
+// Obsolete - use EnqueueWork instead
 var CallDelayFunc = func(c context.Context, queueName, subPath string, f *delay.Function, args ...interface{}) error {
 	return CallDelayFuncWithDelay(c, 0, queueName, subPath, f, args...)
 }
@@ -49,6 +50,8 @@ func CreateDelayTask(queueName, subPath string, f *delay.Function, args ...inter
 	}
 }
 
+// EnqueueWorkMulti - is obsolete
+// Obsolete
 func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...[]interface{}) (err error) {
 	tasks := make([]*taskqueue.Task, len(args))
 	for i, arg := range args {
@@ -61,6 +64,8 @@ func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time
 	return err
 }
 
+// EnqueueWork - is obsolete
+// Obsolete
 func EnqueueWork(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...interface{}) (err error) {
 	var task *taskqueue.Task
 	task, err = CreateDelayTask(queueName, subPath, f, args...)
