@@ -2,7 +2,7 @@ package apphostgae
 
 import (
 	"context"
-	"github.com/strongo/app/delaying"
+	"github.com/strongo/delaying"
 	"google.golang.org/appengine/delay"
 	"google.golang.org/appengine/taskqueue"
 )
