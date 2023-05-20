@@ -60,7 +60,7 @@ func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time
 		}
 		tasks[i].Delay = delay
 	}
-	tasks, err = taskqueue.AddMulti(ctx, tasks, queueName)
+	_, err = taskqueue.AddMulti(ctx, tasks, queueName)
 	return err
 }
 
@@ -73,7 +73,7 @@ func EnqueueWork(ctx context.Context, queueName, subPath string, delay time.Dura
 		return fmt.Errorf("failed to create delay task: %w", err)
 	}
 	task.Delay = delay
-	task, err = taskqueue.Add(ctx, task, queueName)
+	_, err = taskqueue.Add(ctx, task, queueName)
 	return err
 }
 

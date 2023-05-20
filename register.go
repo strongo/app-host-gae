@@ -18,7 +18,7 @@ func MustRegisterDelayedFunc(key string, i interface{}) delaying.Function {
 			if d := params.Delay(); d > 0 {
 				task.Delay = d
 			}
-			task, err = taskqueue.Add(c, task, params.Queue())
+			_, err = taskqueue.Add(c, task, params.Queue())
 			return err
 		},
 		func(c context.Context, params delaying.Params, args ...[]interface{}) (err error) {
@@ -32,7 +32,7 @@ func MustRegisterDelayedFunc(key string, i interface{}) delaying.Function {
 					tasks[i].Delay = d
 				}
 			}
-			tasks, err = taskqueue.AddMulti(c, tasks, params.Queue())
+			_, err = taskqueue.AddMulti(c, tasks, params.Queue())
 			return err
 		},
 	)
