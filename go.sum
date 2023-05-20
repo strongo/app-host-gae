@@ -18,8 +18,12 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/stretchr/testify v1.8.2 h1:+h33VjcLVPDHtOdpUCuF+7gSuG3yGIftsP1YvFihtJ8=
 github.com/stretchr/testify v1.8.2/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
+github.com/stretchr/testify v1.8.3 h1:RP3t2pwF7cMEbC1dqtB6poj3niw/9gnV4Cjg5oW5gtY=
+github.com/stretchr/testify v1.8.3/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/strongo/app v0.3.0 h1:OzgADc/HPa/cleD9EIJSgoMT12w8hEmLtjxyNI1qau4=
 github.com/strongo/app v0.3.0/go.mod h1:xPE1dmccArgH6xcyyS6c+r2uaB1GCBmUlvXgt45PRsM=
+github.com/strongo/app v0.4.1 h1:3Yggb9+byljzAzWspeoQNVIcsP/ufydC1BfDIMOogLg=
+github.com/strongo/app v0.4.1/go.mod h1:r1GYjymMLncZ+hcIx/Yar41KmBobnjE/YOi3ngm6l08=
 github.com/strongo/delaying v0.0.1 h1:avN7p5oKcowaDeEbGJLB4QHgttK6y9OtGwFN0UkEDi8=
 github.com/strongo/delaying v0.0.1/go.mod h1:nQ3n4876SKTIR0FUrig6huZgI/mWHAOeGMVHkGs76tk=
 github.com/strongo/i18n v0.0.2 h1:UNEUj9NHlEZIeV/tluFSE2cQcKmnIOkCbdO4Zmbq4pE=
