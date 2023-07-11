@@ -7,6 +7,7 @@ require (
 	github.com/strongo/app v0.5.7
 	github.com/strongo/delaying v0.0.1
 	google.golang.org/appengine v1.6.7
+	google.golang.org/appengine/v2 v2.0.4
 )
 
 require (
