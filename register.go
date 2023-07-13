@@ -3,8 +3,8 @@ package apphostgae
 import (
 	"context"
 	"github.com/strongo/delaying"
-	"google.golang.org/appengine/delay"
-	"google.golang.org/appengine/taskqueue"
+	"google.golang.org/appengine/v2/delay"
+	"google.golang.org/appengine/v2/taskqueue"
 )
 
 func MustRegisterDelayedFunc(key string, i interface{}) delaying.Function {

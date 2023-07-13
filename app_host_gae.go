@@ -3,7 +3,7 @@ package apphostgae
 import (
 	"context"
 	strongo "github.com/strongo/app"
-	"google.golang.org/appengine"
+	"google.golang.org/appengine/v2"
 	"net/http"
 	"strings"
 )

@@ -6,7 +6,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/strongo/app v0.5.7
 	github.com/strongo/delaying v0.0.1
-	google.golang.org/appengine v1.6.7
+	google.golang.org/appengine/v2 v2.0.4
 )
 
 require (
@@ -17,7 +17,6 @@ require (
 	github.com/strongo/i18n v0.0.2 // indirect
 	github.com/strongo/random v0.0.1 // indirect
 	github.com/strongo/slice v0.1.3 // indirect
-	golang.org/x/net v0.9.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
