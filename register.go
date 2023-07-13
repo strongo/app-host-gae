@@ -8,7 +8,7 @@ import (
 )
 
 func MustRegisterDelayedFunc(key string, i interface{}) delaying.Function {
-	f := delay.Func(key, i)
+	f := delay.MustRegister(key, i)
 	return delaying.NewFunction(key, f,
 		func(c context.Context, params delaying.Params, args ...interface{}) error {
 			task, err := f.Task(args...)
