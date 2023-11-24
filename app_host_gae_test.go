@@ -3,7 +3,7 @@ package apphostgae
 import (
 	"context"
 	"github.com/stretchr/testify/assert"
-	"github.com/strongo/app"
+	"github.com/strongo/strongoapp"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -11,7 +11,7 @@ import (
 
 func TestNewHttpAppHostGAE(t *testing.T) {
 
-	httpAppHost := func() strongo.HttpAppHost {
+	httpAppHost := func() strongoapp.HttpAppHost {
 		return NewHttpAppHostGAE()
 	}()
 	assert.NotNil(t, httpAppHost)
@@ -30,11 +30,11 @@ func Test_httpAppHostGae_GetEnvironment(t *testing.T) {
 		name string
 		host string
 		args args
-		want strongo.Environment
+		want strongoapp.Environment
 	}{
-		{"appspot", "some-app.appspot.com", args{context.Background(), nil}, strongo.EnvProduction},
-		{"local", "some-app.local", args{context.Background(), nil}, strongo.EnvLocal},
-		{"localhost", "localhost", args{context.Background(), nil}, strongo.EnvLocal},
+		{"appspot", "some-app.appspot.com", args{context.Background(), nil}, strongoapp.EnvProduction},
+		{"local", "some-app.local", args{context.Background(), nil}, strongoapp.EnvLocal},
+		{"localhost", "localhost", args{context.Background(), nil}, strongoapp.EnvLocal},
 	}
 	h := httpAppHostGae{}
 	for _, tt := range tests {
@@ -50,7 +50,7 @@ func Test_httpAppHostGae_GetEnvironment(t *testing.T) {
 
 func Test_httpAppHostGae_HandleWithContext(t *testing.T) {
 	type args struct {
-		handler strongo.HttpHandlerWithContext
+		handler strongoapp.HttpHandlerWithContext
 	}
 	tests := []struct {
 		name   string
