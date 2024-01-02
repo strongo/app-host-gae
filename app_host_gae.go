@@ -19,7 +19,7 @@ type httpAppHostGae struct {
 
 var gaeDefaultVersionHostname = appengine.DefaultVersionHostname
 
-func (h httpAppHostGae) GetEnvironment(c context.Context, _ *http.Request) strongoapp.Environment {
+func (h httpAppHostGae) GetEnvironment(c context.Context, _ *http.Request) string {
 	hostname := gaeDefaultVersionHostname(c)
 	return getEnvFromHost(hostname)
 }
@@ -33,11 +33,11 @@ func (h httpAppHostGae) HandleWithContext(handler strongoapp.HttpHandlerWithCont
 	}
 }
 
-func getEnvFromHost(host string) strongoapp.Environment {
+func getEnvFromHost(host string) string {
 	if strings.Contains(host, "dev") && strings.HasSuffix(host, ".appspot.com") {
-		return strongoapp.EnvDevTest
+		return "dev"
 	} else if host == "localhost" || strings.HasPrefix(host, "localhost:") || strings.HasSuffix(host, ".ngrok.io") || strings.Contains(host, "local") {
-		return strongoapp.EnvLocal
+		return strongoapp.LocalHostEnv
 	}
-	return strongoapp.EnvProduction
+	return "prod"
 }

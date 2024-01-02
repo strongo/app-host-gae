@@ -30,11 +30,11 @@ func Test_httpAppHostGae_GetEnvironment(t *testing.T) {
 		name string
 		host string
 		args args
-		want strongoapp.Environment
+		want string
 	}{
-		{"appspot", "some-app.appspot.com", args{context.Background(), nil}, strongoapp.EnvProduction},
-		{"local", "some-app.local", args{context.Background(), nil}, strongoapp.EnvLocal},
-		{"localhost", "localhost", args{context.Background(), nil}, strongoapp.EnvLocal},
+		{"appspot", "some-app.appspot.com", args{context.Background(), nil}, "prod"},
+		{"local", "some-app.local", args{context.Background(), nil}, strongoapp.LocalHostEnv},
+		{"localhost", "localhost", args{context.Background(), nil}, strongoapp.LocalHostEnv},
 	}
 	h := httpAppHostGae{}
 	for _, tt := range tests {
