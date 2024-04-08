@@ -8,7 +8,7 @@ require (
 	github.com/stretchr/testify v1.9.0
 	github.com/strongo/delaying v0.0.1
 	github.com/strongo/strongoapp v0.17.1
-	google.golang.org/appengine/v2 v2.0.5
+	google.golang.org/appengine/v2 v2.0.6
 )
 
 require (
