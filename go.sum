@@ -1,5 +1,7 @@
 github.com/alexsergivan/transliterator v1.0.0 h1:SAA+fkGZKLnak47h8Dr6829IE2kpSZR2Y3yTd69cIwY=
 github.com/alexsergivan/transliterator v1.0.0/go.mod h1:0IrumukulURJ4PD0z6UcdJKP2job1DYDhnHAP5y+5pE=
+github.com/alexsergivan/transliterator v1.0.1 h1:vON2ilWCHjq+S5Y4obhLGhHK4Y1VIhsHEtQlij5d9pI=
+github.com/alexsergivan/transliterator v1.0.1/go.mod h1:0IrumukulURJ4PD0z6UcdJKP2job1DYDhnHAP5y+5pE=
 github.com/dal-go/dalgo v0.12.0 h1:giibzqo6mIkU06b0r4uKb3ZEa2agtj1qnL8RNa6sOBM=
 github.com/dal-go/dalgo v0.12.0/go.mod h1:741DXTLpQfmvkazyEiivX8OBFylpzS1QErdh/6WquqI=
 github.com/dal-go/dalgo v0.12.1 h1:3W95xOSC7CLgH3OQppNOWoIaMkon8GlQmgYxxO5qnvs=
@@ -38,6 +40,8 @@ github.com/strongo/strongoapp v0.17.2 h1:UibJPfVmRIsKh5b6fyiUcpuPzyVuni1dGzMQrGS
 github.com/strongo/strongoapp v0.17.2/go.mod h1:jZNcBilTGETzYBUVOewWBIxvSUA+C/ctmIgDPPMol7Y=
 github.com/strongo/strongoapp v0.18.2 h1:L2HTDWOsrkO0OR5AQYGqpSSKQLzN9NUxiFS8b18WQd0=
 github.com/strongo/strongoapp v0.18.2/go.mod h1:jZNcBilTGETzYBUVOewWBIxvSUA+C/ctmIgDPPMol7Y=
+github.com/strongo/strongoapp v0.18.3 h1:5PAIvkkWe1Oxq5Ih05LSiyU7/fU3l+LroOhka7d8Co8=
+github.com/strongo/strongoapp v0.18.3/go.mod h1:jmfXybp7mwYoMRTW7BRM/HgEWTaWgUqmu14yQglBjNg=
 github.com/strongo/validation v0.0.6 h1:RskXD45ILagVW3jmuKUiq7WshE4kmoQEiUbgfigqHzw=
 github.com/strongo/validation v0.0.6/go.mod h1:V4Nu8b8CPsLNwYLKmMHN2ghkoabOpiOW8NNcUczuCWE=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
