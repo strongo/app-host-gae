@@ -28,6 +28,8 @@ github.com/strongo/random v0.0.1 h1:OZHJBb/3uEa7OX8L2Dv2pLnSeewRmXMyTACoeto6O8I=
 github.com/strongo/random v0.0.1/go.mod h1:/pSI+SjBNLBkjljNtVdYr6ERddA+LqSa87o0/s+9iuU=
 github.com/strongo/slice v0.1.4 h1:2v8NLcC5MnJ+xNGN6zMaazM9I/lIdbQ8imhiBNSPn7g=
 github.com/strongo/slice v0.1.4/go.mod h1:BU7lwUgp3k4EXTc0zLW2SsPiWeGkDoF3ybu6nlVjFLY=
+github.com/strongo/slice v0.2.0 h1:HpoBqFuE/kqQLgQf6S4r8rvO8hmeplk1WD9u7Z30V68=
+github.com/strongo/slice v0.2.0/go.mod h1:5OL1zbsT5e93IihjLNag5epqjti5d24bGyOqWMgtX/o=
 github.com/strongo/strongoapp v0.15.0 h1:QXaTjXmraScjUCs8+sSfMFCxTZv+6Mh8J06Ily2B3rk=
 github.com/strongo/strongoapp v0.15.0/go.mod h1:yMpsZiowjazIpPEKqieS9hbaaUyuyRPcFA948feBPPE=
 github.com/strongo/strongoapp v0.15.1 h1:BVrC+WI5hWkXT4RurGoFiTjEfgtAAHSGtnYNc9JMRcI=
@@ -42,6 +44,8 @@ github.com/strongo/strongoapp v0.18.2 h1:L2HTDWOsrkO0OR5AQYGqpSSKQLzN9NUxiFS8b18
 github.com/strongo/strongoapp v0.18.2/go.mod h1:jZNcBilTGETzYBUVOewWBIxvSUA+C/ctmIgDPPMol7Y=
 github.com/strongo/strongoapp v0.18.3 h1:5PAIvkkWe1Oxq5Ih05LSiyU7/fU3l+LroOhka7d8Co8=
 github.com/strongo/strongoapp v0.18.3/go.mod h1:jmfXybp7mwYoMRTW7BRM/HgEWTaWgUqmu14yQglBjNg=
+github.com/strongo/strongoapp v0.19.1 h1:YfCSXl9phTg8t8t6g1nmfuAbMophpYyKh+9ZumZO+II=
+github.com/strongo/strongoapp v0.19.1/go.mod h1:MsSKFcoGftA9NC/Gv0Y/+RqcVVo1cL0txBpTtBgml1I=
 github.com/strongo/validation v0.0.6 h1:RskXD45ILagVW3jmuKUiq7WshE4kmoQEiUbgfigqHzw=
 github.com/strongo/validation v0.0.6/go.mod h1:V4Nu8b8CPsLNwYLKmMHN2ghkoabOpiOW8NNcUczuCWE=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
