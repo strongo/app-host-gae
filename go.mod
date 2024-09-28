@@ -5,13 +5,13 @@ go 1.22
 require (
 	github.com/stretchr/testify v1.9.0
 	github.com/strongo/delaying v0.0.1
-	github.com/strongo/strongoapp v0.25.1
+	github.com/strongo/strongoapp v0.25.2
 	google.golang.org/appengine/v2 v2.0.6
 )
 
 require (
 	github.com/alexsergivan/transliterator v1.0.1 // indirect
-	github.com/dal-go/dalgo v0.13.2 // indirect
+	github.com/dal-go/dalgo v0.14.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
