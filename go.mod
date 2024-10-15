@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/stretchr/testify v1.9.0
-	github.com/strongo/delaying v0.0.1
+	github.com/strongo/delaying v0.1.0
 	github.com/strongo/strongoapp v0.25.2
 	google.golang.org/appengine/v2 v2.0.6
 )
@@ -18,6 +18,6 @@ require (
 	github.com/strongo/random v0.0.1 // indirect
 	github.com/strongo/slice v0.3.0 // indirect
 	github.com/strongo/validation v0.0.7 // indirect
-	google.golang.org/protobuf v1.34.2 // indirect
+	google.golang.org/protobuf v1.35.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

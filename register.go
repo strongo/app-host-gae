@@ -7,9 +7,9 @@ import (
 	"google.golang.org/appengine/v2/taskqueue"
 )
 
-func MustRegisterDelayedFunc(key string, i interface{}) delaying.Function {
+func MustRegisterDelayedFunc(key string, i interface{}) delaying.Delayer {
 	f := delay.MustRegister(key, i)
-	return delaying.NewFunction(key, f,
+	return delaying.NewDelayer(key, f,
 		func(c context.Context, params delaying.Params, args ...interface{}) error {
 			task, err := f.Task(args...)
 			if err != nil {
