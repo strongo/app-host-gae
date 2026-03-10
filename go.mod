@@ -2,18 +2,18 @@ module github.com/strongo/app-host-gae
 
 go 1.24.0
 
-toolchain go1.26.0
+toolchain go1.26.1
 
 require (
 	github.com/stretchr/testify v1.11.1
 	github.com/strongo/delaying v0.2.1
-	github.com/strongo/strongoapp v0.31.14
+	github.com/strongo/strongoapp v0.31.16
 	google.golang.org/appengine/v2 v2.0.6
 )
 
 require (
 	github.com/alexsergivan/transliterator v1.0.1 // indirect
-	github.com/dal-go/dalgo v0.41.3 // indirect
+	github.com/dal-go/dalgo v0.41.6 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
