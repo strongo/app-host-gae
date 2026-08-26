@@ -6,8 +6,8 @@ toolchain go1.27.0
 
 require (
 	github.com/stretchr/testify v1.12.1
-	github.com/strongo/delaying v0.2.3
-	github.com/strongo/strongoapp v0.31.53
+	github.com/strongo/delaying v0.2.5
+	github.com/strongo/strongoapp v0.31.55
 	google.golang.org/appengine/v2 v2.0.6
 )
 
