@@ -7,20 +7,20 @@ toolchain go1.27.0
 require (
 	github.com/stretchr/testify v1.12.1
 	github.com/strongo/delaying v0.2.5
-	github.com/strongo/strongoapp v0.31.55
+	github.com/strongo/strongoapp v0.31.56
 	google.golang.org/appengine/v2 v2.0.6
 )
 
 require (
 	github.com/alexsergivan/transliterator v1.0.1 // indirect
 	github.com/dal-go/dalgo v0.62.13 // indirect
-	github.com/dal-go/record v0.1.2 // indirect
+	github.com/dal-go/record v0.1.3 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/strongo/random v0.0.1 // indirect
-	github.com/strongo/slice v0.3.7 // indirect
-	github.com/strongo/validation v0.0.10 // indirect
+	github.com/strongo/slice v0.3.9 // indirect
+	github.com/strongo/validation v0.0.12 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	google.golang.org/protobuf v1.35.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
