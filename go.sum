@@ -140,6 +140,8 @@ github.com/strongo/delaying v0.2.3 h1:hoocochAXXaP7nfw9JpFSOBc60yB9euJmpqQuDsqpA
 github.com/strongo/delaying v0.2.3/go.mod h1:6PnWp2IL3UDo7tQyFVIOxBiIiHSj0eVZ6VfrleGNjzA=
 github.com/strongo/delaying v0.2.5 h1:zl4/ObXSySrmFS2OBwyLFQPubbmwpMcxwFx3ahjow/0=
 github.com/strongo/delaying v0.2.5/go.mod h1:Rjr/t5zvF9vz4TqLkoO5YARZckJH/qbDI/1fyMCm0ng=
+github.com/strongo/delaying v0.2.6 h1:7JHbs/T3DdPFqTkY1SucofY+Oyff0uo/5dwxSr3Ivac=
+github.com/strongo/delaying v0.2.6/go.mod h1:8Oyv0h5T8F3dsxDP86nDou2duPNwPvLIgQBWAv6JM08=
 github.com/strongo/random v0.0.1 h1:OZHJBb/3uEa7OX8L2Dv2pLnSeewRmXMyTACoeto6O8I=
 github.com/strongo/random v0.0.1/go.mod h1:/pSI+SjBNLBkjljNtVdYr6ERddA+LqSa87o0/s+9iuU=
 github.com/strongo/slice v0.2.0 h1:HpoBqFuE/kqQLgQf6S4r8rvO8hmeplk1WD9u7Z30V68=
@@ -292,6 +294,8 @@ github.com/strongo/strongoapp v0.31.55 h1:m+3PLyf6OAXh4HB+xngRteFKOap2m5NK63saaD
 github.com/strongo/strongoapp v0.31.55/go.mod h1:HLxFDfh6bUOhBmt64tm3sXJhPJHPT4kqZQW9ZwiIToo=
 github.com/strongo/strongoapp v0.31.56 h1:jtTS7XZFdvLyUl+9LiQ4qbrykeJ44R+uB4H8wx6ug4c=
 github.com/strongo/strongoapp v0.31.56/go.mod h1:StuHWYUolxl8rrNHOBgj+yeDtaQUJQj5q9lAVzh/RkY=
+github.com/strongo/strongoapp v0.31.57 h1:xSCspRraD1t305vVR99wZAzM6YdXdUetpYB2uFLn31k=
+github.com/strongo/strongoapp v0.31.57/go.mod h1:Y6EaIa/wAwVDxe5OXHMbBpiqc+KOkuwHFuIECnUsZok=
 github.com/strongo/validation v0.0.7 h1:gs6YkwPsYtVsepQaQOB+ZF+T0Gu5+nk4ZMND8F85e+U=
 github.com/strongo/validation v0.0.7/go.mod h1:YUwoPEItLJd/Bc9X1OCUm03ofhvm3kwZvuihU7/jz58=
 github.com/strongo/validation v0.0.8 h1:LL3FODf1MTOROKa8fHJuwYxiKHcvd1W2Vs0OXc1H46U=
