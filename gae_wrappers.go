@@ -50,6 +50,11 @@ func CreateDelayTask(queueName, subPath string, f *delay.Function, args ...inter
 	}
 }
 
+var (
+	taskqueueAdd      = taskqueue.Add
+	taskqueueAddMulti = taskqueue.AddMulti
+)
+
 // EnqueueWorkMulti - is obsolete
 // Obsolete
 func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...[]interface{}) (err error) {
@@ -60,7 +65,7 @@ func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time
 		}
 		tasks[i].Delay = delay
 	}
-	_, err = taskqueue.AddMulti(ctx, tasks, queueName)
+	_, err = taskqueueAddMulti(ctx, tasks, queueName)
 	return err
 }
 
@@ -69,11 +74,11 @@ func EnqueueWorkMulti(ctx context.Context, queueName, subPath string, delay time
 func EnqueueWork(ctx context.Context, queueName, subPath string, delay time.Duration, f *delay.Function, args ...interface{}) (err error) {
 	var task *taskqueue.Task
 	task, err = CreateDelayTask(queueName, subPath, f, args...)
-	if err == nil {
+	if err != nil {
 		return fmt.Errorf("failed to create delay task: %w", err)
 	}
 	task.Delay = delay
-	_, err = taskqueue.Add(ctx, task, queueName)
+	_, err = taskqueueAdd(ctx, task, queueName)
 	return err
 }
 
@@ -88,7 +93,7 @@ var AddTaskToQueue = func(c context.Context, t *taskqueue.Task, queueName string
 	if queueName == "default" {
 		return nil, errors.New(failedToAddTaskToQueuePrefix + "queueName is 'default'")
 	}
-	if task, err = taskqueue.Add(c, t, queueName); err != nil {
+	if task, err = taskqueueAdd(c, t, queueName); err != nil {
 		err = fmt.Errorf("%s: %w", failedToAddTaskToQueue, err)
 		//} else {
 		//	isInTransaction := gaedb.NewDatabase().IsInTransaction(c)

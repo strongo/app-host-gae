@@ -18,11 +18,11 @@ func MustRegisterDelayedFunc(key string, i interface{}) delaying.Delayer {
 			if d := params.Delay(); d > 0 {
 				task.Delay = d
 			}
-			_, err = taskqueue.Add(c, task, params.Queue())
+			_, err = taskqueueAdd(c, task, params.Queue())
 			return err
 		},
 		func(c context.Context, params delaying.Params, args ...[]interface{}) (err error) {
-			tasks := make([]*taskqueue.Task, 0, len(args))
+			tasks := make([]*taskqueue.Task, len(args))
 
 			for i, arg := range args {
 				if tasks[i], err = f.Task(arg...); err != nil {
@@ -32,7 +32,7 @@ func MustRegisterDelayedFunc(key string, i interface{}) delaying.Delayer {
 					tasks[i].Delay = d
 				}
 			}
-			_, err = taskqueue.AddMulti(c, tasks, params.Queue())
+			_, err = taskqueueAddMulti(c, tasks, params.Queue())
 			return err
 		},
 	)
