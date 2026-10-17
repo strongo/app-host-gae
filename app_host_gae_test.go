@@ -33,8 +33,11 @@ func Test_httpAppHostGae_GetEnvironment(t *testing.T) {
 		want string
 	}{
 		{"appspot", "some-app.appspot.com", args{context.Background(), nil}, "prod"},
+		{"dev_appspot", "some-dev-app.appspot.com", args{context.Background(), nil}, "dev"},
 		{"local", "some-app.local", args{context.Background(), nil}, strongoapp.LocalHostEnv},
 		{"localhost", "localhost", args{context.Background(), nil}, strongoapp.LocalHostEnv},
+		{"localhost_port", "localhost:8080", args{context.Background(), nil}, strongoapp.LocalHostEnv},
+		{"ngrok", "sub.ngrok.io", args{context.Background(), nil}, strongoapp.LocalHostEnv},
 	}
 	h := httpAppHostGae{}
 	for _, tt := range tests {
