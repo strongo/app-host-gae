@@ -2,11 +2,11 @@ module github.com/strongo/app-host-gae
 
 go 1.26.0
 
-toolchain go1.27.3
+toolchain go1.27.4
 
 require (
 	github.com/stretchr/testify v1.12.1
-	github.com/strongo/delaying v0.2.10
+	github.com/strongo/delaying v0.2.11
 	github.com/strongo/strongoapp v0.31.72
 	google.golang.org/appengine/v2 v2.0.6
 )

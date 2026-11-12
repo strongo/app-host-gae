@@ -152,6 +152,8 @@ github.com/strongo/delaying v0.2.9 h1:CtzeEfyAy7lxArpHxT25hxpnAOrpG9P8mVpupCTQwj
 github.com/strongo/delaying v0.2.9/go.mod h1:PTjCXFLNU0Kw0p+Lj/ESKnNlnp5xyliVfuUICQLn0HI=
 github.com/strongo/delaying v0.2.10 h1:obHYL+Ujelq3Kjex42LFddwK1EEiHlGohGxVIwNmWPM=
 github.com/strongo/delaying v0.2.10/go.mod h1:O7o2G4Vr2L9/2AyQl9jAiqMWjPQggl+IeXeQAhGR4qY=
+github.com/strongo/delaying v0.2.11 h1:X5OimID7TGuwR/l8V7Ztimwh35NR0xIajupgJ4uQJNQ=
+github.com/strongo/delaying v0.2.11/go.mod h1:ToAdvTbaoAgKRDPm0mdYzOb1PL+I9LN5uJwwRN6zf+g=
 github.com/strongo/random v0.0.1 h1:OZHJBb/3uEa7OX8L2Dv2pLnSeewRmXMyTACoeto6O8I=
 github.com/strongo/random v0.0.1/go.mod h1:/pSI+SjBNLBkjljNtVdYr6ERddA+LqSa87o0/s+9iuU=
 github.com/strongo/random v0.0.2 h1:lnISBL6GM6xkWCJDRZRoOXaOUoytg76IyWkx6CLUHKg=
