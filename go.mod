@@ -7,7 +7,7 @@ toolchain go1.27.4
 require (
 	github.com/stretchr/testify v1.12.1
 	github.com/strongo/delaying v0.2.11
-	github.com/strongo/strongoapp v0.31.73
+	github.com/strongo/strongoapp v0.31.74
 	google.golang.org/appengine/v2 v2.1.0
 )
 
@@ -34,7 +34,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/strongo/random v0.0.3 // indirect
 	github.com/strongo/slice v0.3.15 // indirect
-	github.com/strongo/validation v0.0.17 // indirect
+	github.com/strongo/validation v0.0.18 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.67.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.67.0 // indirect
